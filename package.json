@@ -6,7 +6,6 @@
   "scripts": {
     "start":"node src/index.js",
     "server":"nodemon src/index.js",
-    "build":"cd ../frontend && npm install && npx vite build && cd ../backend && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
