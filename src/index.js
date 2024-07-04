@@ -57,16 +57,16 @@ server.use('/api/selection',SelectionRouter)
 server.use('/api/branch',BranchRouter)
 
 
-// -------------------DEployment code------
+// // -------------------DEployment code------
 
-const __dirname1 = path.resolve()
-if(process.env.NODE_ENV === 'production'){
-    server.use(express.static(path.join(__dirname1,"/frontend/dist")))
-    server.get('*',(req,res)=>{
-        res.sendFile(path.resolve(__dirname1,"frontend","dist","index.html"))
-    })
-}
-// -------------------
+// const __dirname1 = path.resolve()
+// if(process.env.NODE_ENV === 'production'){
+//     server.use(express.static(path.join(__dirname1,"/frontend/dist")))
+//     server.get('*',(req,res)=>{
+//         res.sendFile(path.resolve(__dirname1,"frontend","dist","index.html"))
+//     })
+// }
+// // -------------------
 
 
 
