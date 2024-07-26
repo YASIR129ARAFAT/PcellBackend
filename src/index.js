@@ -8,8 +8,8 @@ const path = require('path');
 
 const server = express();
 dotenv.config({
-    // path: path.resolve(__dirname, '../.env')
-    path: '../.env'
+    path: path.resolve(__dirname, '../.env')
+    // path: '../.env'
 
 });
 

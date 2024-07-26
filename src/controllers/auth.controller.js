@@ -220,7 +220,7 @@ exports.resetForgotPassword = asyncHandler(async(req,res)=>{
             id:_id
         }
         const token =  jwt.sign(payload,secret,{expiresIn:'4h'}); // token expires in 4hrs
-        const resetLink = `http://localhost:${process.env.FRONTEND_PORT}/reset/${_id}?token=${token}`
+        const resetLink = `https://pcellbackend.onrender.com/reset/${_id}?token=${token}`
 
         //send email
         const to = email
