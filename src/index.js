@@ -55,7 +55,7 @@ server.use('/api/announcements', authMiddleware, AnnouncementsRouter); // this i
 server.use('/api/comments',authMiddleware, CommentsRouter); //comments route
 server.use('/api/opening',OpeningsRouter)
 server.use('/api/selection',SelectionRouter)
-server.use('/api/selection',SelectionRouter)
+// server.use('/api/selection',SelectionRouter)
 server.use('/api/branch',BranchRouter)
 
 

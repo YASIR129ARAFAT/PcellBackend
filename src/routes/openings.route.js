@@ -19,9 +19,9 @@ const { authMiddleware } = require('../middlewares/auth.middleware.js');
  */
 
 router
-    .post('/addOpening', authMiddleware, addOpening)
+    .post('/addOpening', authMiddleware,isAdminMiddleware, addOpening)
     .get('/getAllOpenings', authMiddleware, getAllOpenings)
-    .delete('/deleteOpening/:_id', authMiddleware, deleteOpening)
+    .delete('/deleteOpening/:_id', authMiddleware,isAdminMiddleware, deleteOpening)
     .get('/getSingleOpening/:_id',authMiddleware,getSingleOpening)
 
 
